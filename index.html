@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./mediaQuery.css">
   <link type="text/css" rel="stylesheet" href="js/lightslider.css">   
-  <script src="js/javascript.js"></script>
-  <script src="js/lightslider.js"></script>
+  <script src="js/javascript.js" async></script>
+  <script src="js/lightslider.js" async></script>
 
 </head>
 
 <body>
 
   <!-- the animation part -->
-  <div class="animate-background">
+  <!-- <div class="animate-background">
     <div class="dot-1 dots"></div>
     <div class="dot-2 dots"></div>
     <div class="dot-3 dots"></div>
@@ -24,7 +24,7 @@
       <h2>VICTORIA</h2>
       <h2>SPICER</h2>
     </div>
-  </div>
+  </div> -->
 
 <header>
   <nav>
@@ -61,18 +61,18 @@
 
           <ul id="adaptive" class="cs-hidden">
             <li class="item-a first-slider">
-              <img src="https://vspicer.com/wp-content/uploads/2017/06/victoria-spicer-1.jpg" alt="">
+              <img src="./images/victoria-spicer-1.jpg" alt="">
                
             </li>
             <li class="item-b">
-              <img src="https://vspicer.com/wp-content/uploads/2017/04/BlackEywear_stills-3-1600x900.jpg" alt="">
+              <img src="./images/BlackEywear_stills-3-1600x900.jpg" alt="">
             </li>
             <li class="item-c">
-              <img src="https://vspicer.com/wp-content/uploads/2017/05/AV059800-banner-1600x900.jpg" alt="">
+              <img src="./images/AV059800-banner-1600x900.jpg" alt="">
             </li>
 
             <li class="item-d">
-              <img src="https://vspicer.com/wp-content/uploads/2017/04/ally.jpg" alt="">
+              <img src="./images/2017/04/ally.jpg" alt="">
             </li>
             
           </ul>
@@ -112,10 +112,10 @@
         <div class="maginified-image" ><img src="" class="display-none"  ></div>
         <div class="flex-container">
           <div class="left paragraph">
-            I love the imprecision <img src="https://vspicer.com/wp-content/uploads/2019/04/Unpolished-08a_web-e1556638503266-600x338.jpg" alt="" class="text-image">  of what I do. My set design practice is a perfect collision of hunting, sourcing, scouring, and making. <img src="https://vspicer.com/wp-content/uploads/2018/09/CDY_PENCIL_F2_WEB-600x338.jpg" alt="" class="text-image">  Thinking, dreaming and constructing.  
+            I love the imprecision <img src="./images/about-600x338.jpg" alt="" class="text-image">  of what I do. My set design practice is a perfect collision of hunting, sourcing, scouring, and making. <img src="./images/glasshouse-1-600x338.jpg" alt="img" class="text-image">  Thinking, dreaming and constructing.  
           </div>
           <div class="right paragraph">
-            Jiggling, juggling things together. <img src="https://vspicer.com/wp-content/uploads/2017/05/AnOther-Manicure-Buff-2-600x338.jpg" alt="" class="text-image">  Connecting what we have found, little bits and pieces, <img src="https://vspicer.com/wp-content/uploads/2018/09/JA003096_web-600x338.jpg" alt="" class="text-image"> into something new. It is inevitably a collaboration game and I love it. <img src="https://vspicer.com/wp-content/uploads/2018/06/ALP_Jessie-Harris_7015_web-e1527872265681-600x338.jpg" alt="" class="text-image">
+            Jiggling, juggling things together. <img src="./images/AnOther-Manicure-Buff-2-600x338.jpg" alt="" class="text-image">  Connecting what we have found, little bits and pieces, <img src="https://vspicer.com/wp-content/uploads/2018/09/JA003096_web-600x338.jpg" alt="" class="text-image"> into something new. It is inevitably a collaboration game and I love it. <img src="https://vspicer.com/wp-content/uploads/2018/06/ALP_Jessie-Harris_7015_web-e1527872265681-600x338.jpg" alt="" class="text-image">
           </div>
         </div>
       </div>
@@ -214,15 +214,15 @@
     const dispalyNone = document.querySelector('.display-none')
     const images = [
     
-      'https://vspicer.com/wp-content/uploads/2019/04/Unpolished-08a_web-e1556638503266-600x338.jpg' ,
+      './images/about-600x338.jpg' ,
    
-      'https://vspicer.com/wp-content/uploads/2018/09/CDY_PENCIL_F2_WEB-600x338.jpg',
+      './images/glasshouse-1-600x338.jpg',
 
-      "https://vspicer.com/wp-content/uploads/2017/05/AnOther-Manicure-Buff-2-600x338.jpg",
+      "./images/AnOther-Manicure-Buff-2-600x338.jpg",
 
-      "https://vspicer.com/wp-content/uploads/2018/09/JA003096_web-600x338.jpg",
+      "./images/JA003096_web-600x338.jpg",
 
-      "https://vspicer.com/wp-content/uploads/2018/06/ALP_Jessie-Harris_7015_web-e1527872265681-600x338.jpg" 
+      "./images/ALP_Jessie-Harris_7015_web-e1527872265681-600x338.jpg" 
     ]
 
     textImg.forEach( (item, index) => {
@@ -259,6 +259,7 @@
       firstImage.addEventListener('mouseover', () => {
         firstImage.style.zIndex = 7; 
         secondImage.style.zIndex = 6
+        // firstImage.style.filter = "grayscale"
         console.log('mouse is over first');
       })
 

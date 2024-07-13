@@ -142,7 +142,7 @@ main section .container .background-images {
   z-index: 20;
 }
 main section .container .background-images .cursor {
-  background-image: url("https://vspicer.com/wp-content/themes/victoriaspicer/r/img/arrow-right.png");
+  background-image: url("./images/arrow-right.png");
   background-repeat: no-repeat;
   width: 5%;
   height: 5%;
@@ -154,7 +154,7 @@ main section .container .background-images .cursor {
   z-index: 20;
 }
 main section .container .background-images .cursor1 {
-  background-image: url("https://vspicer.com/wp-content/themes/victoriaspicer/r/img/arrow-right.png");
+  background-image: url("./images/arrow-right.png");
   background-repeat: no-repeat;
   width: 5%;
   height: 3%;
@@ -270,7 +270,7 @@ main .two-image .container {
 }
 main .two-image .container .images {
   width: 100%;
-  height: 200vh;
+  height:100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -278,18 +278,23 @@ main .two-image .container .images {
 main .two-image .container .images .first-image {
   width: 60%;
   height: 100%;
-  background-image: url("https://vspicer.com/wp-content/uploads/2019/04/Unpolished-07_web_no-boarder-1024x1274.jpg");
+  background-image: url("./images/victoria-spicer-2-1024x567.jpg");
   background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s ease-in;
   z-index: 5;
 }
+
 main .two-image .container .images .second-image {
-  background-image: url("https://vspicer.com/wp-content/uploads/2018/09/Jack_D_03_web-e1536679617179-1024x671.jpg");
+  background-image: url("./images/spicer-1024x576.jpg");
   width: 60%;
-  height: 40%;
+  height: 60%;
   background-repeat: no-repeat;
   position: absolute;
   bottom: 0;
   right: 0;
+  filter: grayscale(1);
+
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
